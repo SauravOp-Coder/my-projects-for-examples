@@ -1,0 +1,127 @@
+body
+{
+color: rgb(0, 0, 0);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: large;
+}
+.all_in_one
+{
+    background: url(abstract-background-images-wallpaper-ai-generated_643360-4200.avif);
+    background-size: 3500px 1900px;
+    max-width: 100%; 
+}
+a{
+    color: rgb(36, 49, 45);
+}
+.div_CSS
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:right;
+    padding-left:10px;  
+    font-size: 30px;
+   
+}
+.div_CSS :hover
+{
+    color: rgb(52, 160, 255);
+}
+.div4
+{
+    border: 2px solid;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+.Past_edu
+{
+    display: inline-block;
+    border-radius: 7px;
+    border: solid 2px rgb(188, 171, 255);
+    border-style: dashed;
+    padding: 4px;
+}
+.Past_edu:hover
+{
+    background-color: rgb(230, 230, 230);
+   color: rgb(0, 0, 0);
+}
+.header
+{
+    color: rgb(0, 0, 0);
+}
+.header:hover
+{
+ color: rgb(35, 32, 39);   
+}
+.div_CSS1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    padding-left:10px;  
+}
+.div_CSS1 :hover
+{
+    color: rgb(52, 160, 255);
+}
+.n1
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(189, 189, 189);
+    justify-content: left;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    padding: 2px 20px 5px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    overflow: hidden;   
+}
+.w1
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow: hidden;
+
+}
+button
+{
+    color: rgb(255, 229, 189);
+    background-color: rgb(127, 131, 216);
+    border-radius: 6px;
+    padding: 4px;
+}
+button:hover
+{
+    color: rgb(127, 131, 216);
+    background-color: rgb(255, 229, 189) ;
+
+}
+input
+{
+
+    width: 300px;
+}
+footer
+ {
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  .header1
+  {
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  

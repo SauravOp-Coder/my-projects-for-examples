@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Food Menu</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header>
+    <h1>Delicious Bites</h1>
+    <button id="toggle-theme"> 🌙 </button>
+  </header>
+
+  <div class="filter-buttons">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('starter')">Starters</button>
+    <button onclick="filterMenu('main')">Main Course</button>
+    <button onclick="filterMenu('dessert')">Desserts</button>
+    <button onclick="filterMenu('beverage')">Beverages</button>
+  </div>
+
+  <section id="menu" class="menu-container">
+
+    <div class="food-card starter">
+      <img src="277311spicy-fresh-tomato-soupFranceC4x3-56454ad082214f33960f62665fc8c169.jpg" alt="Soup">
+      <h3>Tomato Soup</h3>
+      <p>Warm and creamy tomato soup.</p>
+      <span>₹90</span>
+    </div>
+
+    <div class="food-card main">
+      <img src="PANEERBUTTER_2.webp" alt="Paneer">
+      <h3>Paneer Butter Masala</h3>
+      <p>Rich creamy paneer dish served with naan.</p>
+      <span>₹160</span>
+    </div>
+
+    <div class="food-card dessert">
+      <img src="AR-RM-233928-how-to-make-vanilla-ice-cream-ddmfs-3x4-c5b61f092fe14296b52ca364b1446800.jpg" alt="Ice Cream">
+      <h3>Vanilla Ice Cream</h3>
+      <p>Classic vanilla ice cream scoop.</p>
+      <span>₹50</span>
+    </div>
+
+    <div class="food-card beverage">
+      <img src="Cold-Coffee.png" alt="Coffee">
+      <h3>Cold Coffee</h3>
+      <p>Chilled and refreshing coffee.</p>
+      <span>₹70</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Made with ❤️ by Saurav</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+:root {
+    --bg: #fefefe;
+    --text: #222;
+    --card-bg: #fff;
+    --accent: #ff6347;
+  }
+  
+  body.dark {
+    --bg: #1c1c1c;
+    --text: #f0f0f0;
+    --card-bg: #2c2c2c;
+    --accent: #ffa07a;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  #toggle-theme {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .filter-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .food-card {
+    background-color: var(--card-bg);
+    width: 260px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .food-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .food-card h3 {
+    margin: 16px;
+  }
+  
+  .food-card p, .food-card span {
+    margin: 0 16px 16px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-top: 1px solid #ddd;
+  }
+  
