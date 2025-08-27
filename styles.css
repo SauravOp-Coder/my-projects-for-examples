@@ -113,96 +113,44 @@ body {
 
 /* ===== Responsive Styles ===== */
 /* ===== Mobile Responsive Layout ===== */
+/* Mobile responsive */
 @media (max-width: 768px) {
-  body {
-    padding: 20px;
-    justify-content: center;
+  .accordion-container {
+    flex-direction: column;
+  }
+
+  .accordion, .service-description {
+    width: 100%;
   }
 
   .accordion {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 blocks per row */
-    gap: 16px;
-    height: auto;
+    flex-direction: column;
   }
 
   .accordion li {
-    flex: none;
     width: 100%;
-    height: 260px; /* same size as desktop hover */
-    border-radius: 0;
-    opacity: 1;
-    scale: 1;
-    text-align: center;
+    height: 250px; /* adjust card height */
+    overflow: hidden; /* ✅ crop overflow */
     position: relative;
-    overflow: hidden;
   }
 
   .accordion li img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7); /* dark overlay for text visibility */
+    object-fit: cover; /* ✅ fills card, no distortion */
   }
 
   .accordion li .content {
     position: absolute;
     inset: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;   /* ✅ perfectly center */
-    gap: 8px;
-    opacity: 100;
-    visibility: visible;
-    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
     text-align: center;
-  }
-
-  .accordion li .content span {
-    width: 100%;              /* ✅ span takes full width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  /* ✅ ensures h2 & p centered */
     color: #fff;
-  }
-
-  .accordion h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 6px 0;
-  }
-
-  .accordion p {
-    font-size: 14px;
-    color: #00aaff;
-    font-weight: 500;
-    margin: 0;
-  }
-
-  /* Remove hover animation effects */
-  .accordion li:hover {
-    flex: none;
-    scale: 1;
-    z-index: 1;
-  }
-
-  .accordion li:hover .content {
-    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    opacity: 1;   /* ✅ always visible */
     visibility: visible;
-    text-align: center;
-  }
-
-  /* Description block below */
-  .description {
-    grid-column: 1 / -1; /* full width under grid */
-    background: #fff;
-    padding: 20px;
-   
-    margin-top: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: left;
   }
 }
