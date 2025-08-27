@@ -113,5 +113,14 @@
         </p>
       </div>
     </div>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".accordion li").forEach(card => {
+      card.classList.add("active"); // force visible
+    });
+  });
+</script>
+
   </body>
 </html>
