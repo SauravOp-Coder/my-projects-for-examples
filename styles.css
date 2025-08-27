@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3a3544;
+  text-align: center;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 16px;
+  transition: 0.6s;
+}
+
+.accordion:hover {
+  gap: space-evenly;
+}
+
+.accordion li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  border-radius: 14px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.accordion li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.5);
+}
+
+.accordion li,
+.accordion li img,
+.accordion li .content,
+.accordion li .content span {
+  transition: 0.5s;
+}
+
+.accordion h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.accordion li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 15px;
+  background: #02022e;
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 70%) 10%,
+    rgb(255 255 255 / 0%) 100%
+  );
+  opacity: 0;
+  visibility: hidden;
+}
+
+.accordion li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 50px;
+  translate: -300px 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.accordion li:hover {
+  flex: 0 1 260px;
+  scale: 1.1;
+  z-index: 10;
+  opacity: 1;
+}
+
+.accordion li:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion li:hover span {
+  translate: -50% 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== Responsive Styles ===== */
+/* ===== Mobile Responsive Layout ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .accordion {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 blocks per row */
+    gap: 16px;
+    height: auto;
+  }
+
+  .accordion li {
+    flex: none;
+    width: 100%;
+    height: 260px; /* same size as desktop hover */
+    border-radius: 0;
+    opacity: 1;
+    scale: 1;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .accordion li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* dark overlay for text visibility */
+  }
+
+  .accordion li .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   /* ✅ perfectly center */
+    gap: 8px;
+    opacity: 100;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+
+  .accordion li .content span {
+    width: 100%;              /* ✅ span takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* ✅ ensures h2 & p centered */
+    color: #fff;
+  }
+
+  .accordion h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+  }
+
+  .accordion p {
+    font-size: 14px;
+    color: #00aaff;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  /* Remove hover animation effects */
+  .accordion li:hover {
+    flex: none;
+    scale: 1;
+    z-index: 1;
+  }
+
+  .accordion li:hover .content {
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+  }
+
+  /* Description block below */
+  .description {
+    grid-column: 1 / -1; /* full width under grid */
+    background: #fff;
+    padding: 20px;
+   
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+  }
+}

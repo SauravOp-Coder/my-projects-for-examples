@@ -1,43 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Projects</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>My Project Portfolio</h1>
-    <button id="theme-toggle">Toggle Theme</button>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataspyTech Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+     
+      /* Right Side Description */
+      .description {
+        
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      }
 
-  <div class="projects-wrapper">
+      .description h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #ffffff;
+      }
 
-    <section class="projects-container">
-      <div class="project-card">
-        <img src="port.png" alt="Project 1" />
-        <h2>My personal protfolio</h2>
-        <p>Portfolio by using simple html and css.</p>
-        <a href="p1/index.html" target="_blank">View Project</a>
+      .description p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #d9d9d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left side: Services Accordion -->
+     <ul class="accordion">
+       <li>
+        <img src="A_I.png" />
+        <div class="content">
+          <span>
+            <h2>A I</h2>
+            <p>Backend</p>
+          </span>
+        </div>
+      </li>
+      <li>
+        <img src="web-dev.png" />
+        <div class="content">
+          <span>
+            <h2>Web dev</h2>
+            <p>Frontend</p>
+          </span>
+        </div>
+      </li>
+      <li>
+        <img src="Digital_mark.png" />
+        <div class="content">
+          <span>
+            <h2>Digital Marketing</h2>
+            <p>Backend</p>
+          </span>
+        </div>
+      </li>
+      <li>
+        <img src="data-analysis.png" />
+        <div class="content">
+          <span>
+            <h2>Data analysis </h2>
+            <p>Backend</p>
+          </span>
+        </div>
+      </li>
+     
+      <li>
+        <img src="bussines_dev.png" />
+        <div class="content">
+          <span>
+            <h2>Business Dev</h2>
+            <p>Backend</p>
+          </span>
+        </div>
+      </li>
+      
+      <li>
+        <img src="graphic-design.png" />
+        <div class="content">
+          <span>
+            <h2>graphic design</h2>
+            <p>Designer</p>
+          </span>
+        </div>
+      </li>
+    </ul>
+
+      <!-- Right side: Description -->
+      <div class="description">
+        <h2>How We Offer Our Services</h2>
+        <p>
+          At <b>DataspyTech</b>, we combine expertise, innovation, and
+          cutting-edge tools to deliver high-quality solutions. From building
+          responsive websites and analyzing data for business insights, to
+          running impactful digital marketing campaigns and implementing
+          AI-powered strategies, we cover every digital need.
+        </p>
+        <p>
+          Our team ensures that each service is tailored to your specific
+          business goals, providing you with growth, visibility, and competitive
+          advantage in the market.
+        </p>
       </div>
-    </section>
-
-    <section class="projects-container">
-      <div class="project-card">
-        <img src="1143w-VO5fK-EBNdo.webp" alt="Project 2" />
-        <h2>online Food menu </h2>
-        <p>A simple online food menu static website using html,css and JavaScript.</p>
-        <a href="p2/index.html" target="_blank">View Project</a>
-      </div>
-    </section>
-
-  </div>
-
-  <footer>
-    <p>© 2025 Saurav V Shinde</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    </div>
+  </body>
 </html>
