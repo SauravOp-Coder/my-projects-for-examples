@@ -1,0 +1,156 @@
+.container23 {
+  position: relative;
+  display: flex;
+  gap: 0px;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+
+.card1 {
+  flex: 1;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.3s ease, transform 0.23s ease;
+}
+
+/* Image fills the card */
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Dark overlay */
+.card1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Text overlay */
+.card1 .card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease, bottom 0.5s ease;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Hover effects (desktop) */
+.card1:hover {
+  flex: 3;
+  transform: scale(1.05);
+  z-index: 10;
+
+}
+
+.card1:hover img {
+  transform: scale(1.1);
+}
+
+.card1:hover::before {
+  opacity: 1;
+}
+
+.card1:hover .card-text {
+  opacity: 1;
+  bottom: 40px;
+}
+
+/* Non-hovered fade */
+.card1:not(:hover) {
+  opacity: 0.7;
+}
+
+/* ===========================
+   📱 Responsive Media Queries
+   =========================== */
+
+/* Tablets (portrait & landscape) */
+@media (max-width: 1024px) {
+  .container23 {
+    height: 300px;
+  }
+
+  .card1 .card-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile large (phablets & big phones) */
+@media (max-width: 768px) {
+  .container23 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card1 {
+    flex: none;
+    height: 250px;
+  }
+
+  .card1 .card-text {
+    font-size: 1.3rem;
+    bottom: 15px;
+  }
+}
+
+/* Small mobile (<=480px) */
+@media (max-width: 480px) {
+  .card1 {
+    height: 200px;
+  }
+
+  .card1 .card-text {
+    font-size: 1rem;
+    bottom: 10px;
+    padding: 0 10px;
+  }
+}
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d; /* background color while loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #ca3a33;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

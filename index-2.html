@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Section</title>
-   <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="contact.css">
    <link rel="stylesheet" href="continer.css">
    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="media-qury.css">
     <link rel="stylesheet" href="section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
-  <style>
+</head>
+<style>
     /* Reset */
     * {
       box-sizing: border-box;
@@ -31,7 +29,6 @@
       line-height: 1.6;
       
     }
- 
      :root {
         --bg-black900: #262627;
         --bg-black100: #303030;
@@ -60,6 +57,7 @@
       position: relative;
       height: 100vh;
       display: flex;
+      border-radius: 10px;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
@@ -68,7 +66,6 @@
       background: linear-gradient(to bottom, rgba(66, 66, 66, 0), rgba(0,0,0,0.8)), 
                         url('final.png') center/cover no-repeat;
       background-size: cover;
-      
                     
     }
 
@@ -274,16 +271,7 @@ nav a:hover {
       }
     }
   </style>
-</head>
 <body>
-  <!-- Loader -->
-<div id="loader">
-  <div class="spinner"></div>
-</div>
-
-<!-- Your Website Content -->
-<div id="content" style="display: none;">
-  <!-- Your actual website content goes here -->
 
   
   <!-- hero Section -->
@@ -330,7 +318,7 @@ nav a:hover {
   </section>
 
   <!-- Services Section -->
-     <section style="background-color: #262627;" id="services" class="py-20 px-6 lg:px-12  reveal">
+     <section id="services" class="py-20 px-6 lg:px-12  reveal">
         <div class="container mx-auto"> 
               <div class="container">
         <div class="row">
@@ -340,35 +328,30 @@ nav a:hover {
         </div>
             
                <div class="container23">
-   <a href="web-development.html" class="card1 reveal">
-    <img src="ChatGPT Image Aug 29, 2025, 06_39_40 PM.png" alt="Card Image">
-    <div class="card-text">AI Solutions</div>
-  </a>
-
-  <a href="data-analytics.html" class="card1 reveal">
-    <img src="https://picsum.photos/600/400?random=2" alt="Card Image">
-    <div class="card-text">Data Analytics</div>
-  </a>
-
-  <a href="ai-solutions.html" class="card1 reveal">
-    <img src="https://picsum.photos/600/400?random=3" alt="Card Image">
-    <div class="card-text">Digital Marketing</div>
-  </a>
- <a href="web-development.html" class="card1 reveal">
+   <div class="card1 reveal">
     <img src="https://picsum.photos/600/400?random=1" alt="Card Image">
     <div class="card-text">Web Development</div>
-  </a>
-
-  <a href="data-analytics.html" class="card1 reveal">
+  </div>
+  <div class="card1 reveal">
     <img src="https://picsum.photos/600/400?random=2" alt="Card Image">
-    <div class="card-text">Graphic Design</div>
-  </a>
-
-  <a href="ai-solutions.html" class="card1 reveal">
+    <div class="card-text">Data Analytics</div>
+  </div>
+  <div class="card1 reveal">
     <img src="https://picsum.photos/600/400?random=3" alt="Card Image">
-    <div class="card-text">Business Development</div>
-  </a>
-
+    <div class="card-text">AI Solutions</div>
+  </div>
+  <div class="card1 reveal">
+    <img src="https://picsum.photos/600/400?random=1" alt="Card Image">
+    <div class="card-text">Web Development</div>
+  </div>
+  <div class="card1 reveal">
+    <img src="https://picsum.photos/600/400?random=2" alt="Card Image">
+    <div class="card-text">Data Analytics</div>
+  </div>
+  <div class="card1 reveal">
+    <img src="https://picsum.photos/600/400?random=3" alt="Card Image">
+    <div class="card-text">AI Solutions</div>
+  </div>
   </div>
 
     <script>
@@ -399,11 +382,57 @@ nav a:hover {
     </section>
 
     <!-- Programs Section -->
-  
+  <section id="programs" class="py-20 px-6 lg:px-12 gradient-bg4">
+    <div class="container mx-auto">
+      <!-- Section Heading -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
+          Our <span class="text-red-600">Training Programs</span>
+        </h2>
+        <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+          Not Just Services, We Build Skills That Serve. Our comprehensive learning and development programs drive business growth and technical excellence.
+        </p>
+        <h3 class="mt-6 text-xl italic text-red-400 font-bold">Spy into the world of data with <br> “Industry-Integrated Training”</h3>
+      </div>
 
+      <!-- Program Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        
+        <!-- Card Template -->
+        <div class="bg-gray-900 rounded-2xl p-8 shadow-xl border border-red-800 hover:shadow-red-600/30 transition-all duration-300 group">
+          <div class="flex items-center justify-center w-14 h-14 bg-red-500/10 text-red-500 rounded-full mb-5 border border-red-500 transition-all group-hover:rotate-12">
+            <i class="fas fa-graduation-cap text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Courses we Offer</h3>
+          <p class="text-gray-400 mb-4">Hands-on technical training in web development, data science, digital marketing, and more.</p>
+          <a href="acadamic_conciltancypro.html" class="text-red-500 font-semibold hover:underline hover:text-red-400 transition">Explore Courses →</a>
+        </div>
+
+        <div class="bg-gray-900 rounded-2xl p-8 shadow-xl border border-red-800 hover:shadow-red-600/30 transition-all duration-300 group">
+          <div class="flex items-center justify-center w-14 h-14 bg-red-500/10 text-red-500 rounded-full mb-5 border border-red-500 transition-all group-hover:rotate-12">
+            <i class="fas fa-user-graduate text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Academic Consultancy</h3>
+          <p class="text-gray-400 mb-4">Expert guidance for institutions on curriculum development and tech integration.</p>
+          <a href="real_cunsultanncy.html" class="text-red-500 font-semibold hover:underline hover:text-red-400 transition">Learn More →</a>
+        </div>
+
+        <div class="bg-gray-900 rounded-2xl p-8 shadow-xl border border-red-800 hover:shadow-red-600/30 transition-all duration-300 group">
+          <div class="flex items-center justify-center w-14 h-14 bg-red-500/10 text-red-500 rounded-full mb-5 border border-red-500 transition-all group-hover:rotate-12">
+            <i class="fas fa-briefcase text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Corporate Training</h3>
+          <p class="text-gray-400 mb-4">Customized workforce development programs tailored for enterprise teams.</p>
+          <a href="all_projects.html" class="text-red-500 font-semibold hover:underline hover:text-red-400 transition">View Options →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
 
  <!-- about section -->
-    <section class="about section color" id="about">
+    <section class="about section" id="about">
       <div class="container">
         <div class="row reveal">
           <div class="section-title padd-15">
@@ -451,7 +480,43 @@ nav a:hover {
               </div>
 
               <div class="skills padd-15">
-                 <img src="https://picsum.photos/600/400?random=1" alt="Card Image">
+                <div class="row">
+                  <div class="skill-item padd-15">
+                    <h5>Web Development</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 95%"></div>
+                      <div class="skill-percent">95%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>Data Analytics</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 90%"></div>
+                      <div class="skill-percent">90%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>AI & Automation</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 85%"></div>
+                      <div class="skill-percent">85%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>Digital Marketing</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 88%"></div>
+                      <div class="skill-percent">88%</div>
+                    </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>Training Programs</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 92%"></div>
+                      <div class="skill-percent">92%</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -459,21 +524,18 @@ nav a:hover {
         </div>
       </div>
     </section>
-  
+ <br> 
     <!-- Contact Section -->
-     <section  class="contact section" id="contact">
+     <section class="contact section" id="contact">
       <div class="container">
-
         <div class="row">
           <div class="section-title padd-15 reveal">
             <h2>Contact Us</h2>
           </div>
         </div>
 
-        <h3 class="contact-title padd-15 reveal">Get in Touch with Dataspy Tech</h3>  
+        <h3 class="contact-title padd-15 reveal">Get in Touch with Dataspy Tech</h3> <br> <br>
 
-         <br>
-        
         <div class="row">
           <div class="contact-info-item padd-15 reveal">
             <div class="icon"><i class="fa fa-phone"></i></div>
@@ -588,7 +650,7 @@ nav a:hover {
                 
                 <div>
                      <div class="flex items-center mb-4">
-                        <img src="Logo.png" alt="Dataspy logo mark in white" class="h-50 w-60 full">            
+                        <img src="ei_1752053280162-removebg-preview (2).png" alt="Dataspy logo mark in white" class="h-50 w-60 full">            
                     </div>
                 </div>
             </div>
@@ -619,21 +681,15 @@ nav a:hover {
 </div>
 
             </div>
-       
+        </div>
     </footer>
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    const content = document.getElementById("content");
 
-    // Hide loader
-    loader.style.display = "none";
-
-    // Show content with fade-in
-    content.style.display = "block";
-    content.classList.add("fade-in");
-  });
-</script>
+    <!-- Back to Top Button -->
+    <div id="back-to-top" class="fixed bottom-6 right-6 hidden">
+        <a href="#Home" class="bg-red-600 z-999 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition shadow-lg">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
 
 
 
@@ -751,8 +807,6 @@ nav a:hover {
   reveals.forEach(el => observer.observe(el));
 </script>
 
-
-</div>
 
 </body>
 </html>

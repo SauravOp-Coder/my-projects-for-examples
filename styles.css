@@ -1,25 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #3a3544;
-  text-align: center;
-  font-family: "Euclid Circular A", "Poppins";
-}
 
 .accordion {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 330px;
+  
   gap: 16px;
   transition: 0.6s;
 }
@@ -35,6 +21,7 @@ body {
   border-radius: 14px;
   opacity: 0.75;
   cursor: pointer;
+
 }
 
 .accordion li img {
@@ -98,6 +85,7 @@ body {
   scale: 1.1;
   z-index: 10;
   opacity: 1;
+    border: solid 1px red;
 }
 
 .accordion li:hover .content {
@@ -129,7 +117,7 @@ body {
 
   .accordion li {
     width: 100%;
-    height: 250px; /* adjust card height */
+    height: 230px; /* adjust card height */
     overflow: hidden; /* ✅ crop overflow */
     position: relative;
   }
@@ -153,4 +141,101 @@ body {
     opacity: 1;   /* ✅ always visible */
     visibility: visible;
   }
+}
+   /* Right Side Description */
+      .description {
+        
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      }
+
+      .description h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #ffffff;
+      }
+
+      .description p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #d9d9d9;
+      }
+
+        .mobile-grid {
+      display: none;
+      width: 100%;
+      max-width: 700px;
+      padding: 10px;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .mobile-card {
+      flex: 1 1 calc(50% - 16px);
+      border-radius: 16px;
+       max-height: 200px;
+       width: 200px;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      height: 195px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mobile-card h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .mobile-card p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    /* loder css*/
+    /* Loader full screen */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d; /* background color while loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #ca3a33;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Smooth fade-in effect */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
