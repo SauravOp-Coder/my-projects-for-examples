@@ -136,7 +136,7 @@
 @media (max-width: 992px) {
   .container-tp {
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 0px;
   }
   .left-tp, .right-tp {
     flex: 0 0 100%;
