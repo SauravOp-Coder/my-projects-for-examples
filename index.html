@@ -293,11 +293,10 @@ nav a:hover {
 
 <!-- Your Website Content -->
 <div id="content" style="display: none;">
-  <!-- Your actual website content goes here -->
+  <!-- Our actual website content goes here -->
 
-  
   <!-- hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-content">
       <h2>Spy Into The World Of Business With Artificial Intelligence</h2>
       <p>We are a technology-driven company specializing in Web Development, AI, Data Analytics, and Business Growth Strategies. Our mission is to empower businesses with modern tools, insights, and training programs that fuel success.</p>
@@ -305,13 +304,13 @@ nav a:hover {
     </div>
 
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">About</a>
-      <a href="#">Program</a>
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#program">Program</a>
     </nav>
 
-  <script>
+    <script>
   let lastScroll = 0;
   const nav = document.querySelector("nav");
 
@@ -333,14 +332,11 @@ nav a:hover {
 
     lastScroll = currentScroll;
   });
-</script>
-
-
-
+    </script>
   </section>
 
   <!-- Services Section -->
-     <section style="background-color: #262627;" id="services" class="py-20 px-6 lg:px-12  reveal">
+    <section style="background-color: #262627;" id="services" class="py-20 px-6 lg:px-12  reveal">
         <div class="container mx-auto"> 
               <div class="container">
         <div class="row">
@@ -408,10 +404,7 @@ nav a:hover {
         </div>
     </section>
 
-   
-
-
- <!-- about section -->
+    <!-- about section -->
     <section class="about section color" id="about">
       <div class="container">
         <div class="row reveal">
@@ -469,9 +462,8 @@ nav a:hover {
       </div>
     </section>
 
-    
-      <!-- Programs Section -->
-     <section class="Training-programs">
+    <!-- Programs Section -->
+    <section class="Training-programs" id="program">
       <div style="background-color: #262627;" class="row1">
           <div style="padding-left: 40px;" class="section-title padd-15 reveal">
             <h2>Programs</h2>
@@ -506,10 +498,10 @@ nav a:hover {
     <a href="contact.html" class="btn-tp reveal">Get Started</a>
   </div>
 </div>
-</section>
+    </section>
   
     <!-- Contact Section -->
-     <section  class="contact section" id="contact">
+    <section  class="contact section" id="contact">
       <div class="container">
 
         <div class="row">
@@ -683,8 +675,6 @@ nav a:hover {
   });
 </script>
 
-
-
      <script>
     function clearFormAfterSubmit() {
       // Wait briefly before clearing (after redirect starts)
@@ -693,6 +683,7 @@ nav a:hover {
       }, 100); // slight delay to allow formsubmit to capture values
     }
   </script>
+
       <script>
         // Initialize particle.js
         document.addEventListener('DOMContentLoaded', function() {
@@ -798,9 +789,6 @@ nav a:hover {
 
   reveals.forEach(el => observer.observe(el));
 </script>
-
-
 </div>
-
 </body>
 </html>
