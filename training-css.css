@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 90vh;
+  min-height: 86vh;
+    margin-top: -60px;
 }
 
 /* === Card Animations === */
@@ -118,7 +119,7 @@
   background: red;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius:23px;
   cursor: pointer;
   transition: 0.3s;
   text-decoration: none;
