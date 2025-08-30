@@ -142,7 +142,7 @@
   .left-tp {
     grid-template-columns: 1fr;
   }
-  .tp-card3 {
+  .tp-card1,.tp-card2 ,.tp-card3  {
     grid-column: auto;
     width: 100%;
   }
