@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 100%;
   min-height: 86vh;
-    margin-top: -60px;
+    margin-top: -56px;
 }
 
 /* === Card Animations === */
@@ -136,6 +136,7 @@
 @media (max-width: 992px) {
   .container-tp {
     flex-direction: column;
+    margin-top: 7px;
   }
   .left-tp, .right-tp {
     flex: 0 0 100%;
