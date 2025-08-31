@@ -123,37 +123,37 @@
     padding: 0 10px;
   }
 }
-#loader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #1d1d1d; /* background color while loading */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
 
-/* Spinner animation */
-.spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #ddd;
-  border-top: 5px solid #ca3a33;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
+    /* === Loader Container === */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+    }
 
-@keyframes spin {
-  100% { transform: rotate(360deg); }
-}
+    /* === Company Logo === */
+    .logo {
+      width: 150px;
+      animation: pulse 2s infinite;
+      -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(255,255,255,0.2));
+    }
 
-/* Smooth fade-in effect */
-.fade-in {
-  animation: fadeIn 1s ease-in forwards;
-}
+    /* Logo reflection glow effect */
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.7; }
+    }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
+    /* === Main Website Content === */
+    #content {
+      display: none; /* Hidden until loader finishes */
+    }

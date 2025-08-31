@@ -287,9 +287,9 @@ nav a:hover {
 </head>
 <body>
   <!-- Loader -->
-<div id="loader">
-  <div class="spinner"></div>
-</div>
+<div id="preloader">
+    <img src="Logo.png" alt="Company Logo" class="logo">
+  </div>
 
 <!-- Your Website Content -->
 <div id="content" style="display: none;">
@@ -679,7 +679,7 @@ Our training modules are tailored to business needs, covering emerging technolog
     </footer>
 <script>
   window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
+    const loader = document.getElementById("preloader");
     const content = document.getElementById("content");
 
     // Hide loader
