@@ -148,3 +148,6 @@
       .shadow-dark {
         box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
       }
+Testimonials{
+  padding: auto;
+}
