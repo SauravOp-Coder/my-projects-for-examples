@@ -166,7 +166,3 @@
   overflow: hidden;    /* ensures map respects border-radius */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* shadow */
 }
-.Reviews{
-  margin: 20px ;
-  background-color: #262627;
-}
