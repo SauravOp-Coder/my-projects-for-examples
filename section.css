@@ -148,3 +148,12 @@
       .shadow-dark {
         box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
       }
+html {
+  scroll-behavior: smooth; /* enables smooth scroll */
+}
+
+.smooth-nav {
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}

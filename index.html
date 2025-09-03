@@ -300,14 +300,15 @@ nav a:hover {
     <div class="hero-content">
       <h2>Spy Into The World Of Business With Artificial Intelligence</h2>
       <p>We are a technology-driven company specializing in Web Development, AI, Data Analytics, and Business Growth Strategies. Our mission is to empower businesses with modern tools, insights, and training programs that fuel success.</p>
-      <button class="btn">Get Started</button>
+        <a href="#services" class="btn hire-me" data-section-index="1">Get Started</a>
+        
     </div>
 
     <nav>
-      <a href="#hero">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#program">Program</a>
+      <a class="smooth-nav" href="#hero">Home</a>
+      <a class="smooth-nav" href="#contact">Contact</a>
+      <a class="smooth-nav" href="#about">About</a>
+      <a class="smooth-nav" href="#program">Program</a>
     </nav>
 
     <script>
@@ -489,14 +490,10 @@ nav a:hover {
 
   <!-- Right Side with Info -->
   <div class="right-tp ">
-    <h2 class="reveal h1">For Whom ? </h2>
- 
-
-<p>
+    <h2 style="color: #ff1744; font-weight: bold;" class="reveal h1">For Whom ? </h2>
+<p class="reveal">
 Our training program is designed for students, professionals, and organizations seeking growth and excellence. We support students through academic consultancy and skill development, helping them make the right career choices. Learners and job-seekers can benefit from our specialized courses, crafted to meet industry needs. For corporates, we provide tailored training programs that enhance employee performance, leadership, and productivity. Whether you are an individual aiming to upgrade your skills or a business striving to empower your team, our programs are built to guide you toward success.</p>
 
-    
-    <a href="contact.html" class="btn-tp reveal">Get Started</a>
   </div>
 </div>
     </section>
@@ -748,6 +745,18 @@ Our training program is designed for students, professionals, and organizations 
     content.style.display = "block";
     content.classList.add("fade-in");
   });
+</script>
+
+<script>
+  document.querySelectorAll(".smooth-nav").forEach(button => {
+  button.addEventListener("click", () => {
+    const target = document.querySelector(button.getAttribute("data-target"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
 </script>
 
      <script>
