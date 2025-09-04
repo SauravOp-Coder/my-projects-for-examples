@@ -21,7 +21,7 @@ footer {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   top: 240px;
   left: 50%;
   translate: -50% 0;
@@ -128,7 +128,7 @@ ul {
 @media (width >= 490px) {
   .logo {
     position: relative;
-    bottom: ;
+    bottom: 30px ;
     translate: 0;
   }
 
