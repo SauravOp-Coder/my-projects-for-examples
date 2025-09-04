@@ -20,13 +20,6 @@ footer {
   background: linear-gradient(rgb(0 0 0 / 100%),rgb(0 0 0 / 0%));
 }
 
-.logo {
-  position: fixed;
-  top: 240px;
-  left: 50%;
-  translate: -50% 0;
-  height: 130px;
-}
 
 .top {
   display: flex;
