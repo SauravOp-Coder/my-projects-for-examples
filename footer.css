@@ -15,7 +15,7 @@ footer {
 .footer-inner {
   margin-top: auto;
   width: 100%;
-  height: 570px;
+  height: fit-content;
   padding: 120px 48px 56px;
   background: linear-gradient(rgb(0 0 0 / 100%),rgb(0 0 0 / 0%));
 }
